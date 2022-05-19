@@ -1,0 +1,12 @@
+<div class="container">
+  <ul>
+    <ng-container *ngFor="let name of list">
+      <h1>{{ name.name }}</h1>
+      <ul *ngFor="let item of name.items">
+        <li>
+          {{ item.name }}
+        </li>
+      </ul>
+    </ng-container>
+  </ul>
+</div>
